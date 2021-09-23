@@ -1,0 +1,86 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "CormorantGaramond";
+}
+.foto1,
+.foto2,
+.foto3,
+.foto4 {
+	display: block;
+	position: relative;
+	/*overflow: hidden;*/
+}
+.gallery-text {
+	display: block;
+	position: absolute;
+	padding: 0;
+	height: 250px;
+	width: auto;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.37);
+	color: rgb(233, 233, 233);
+	opacity: 0;
+	transition: all 1s ease 0.3s;
+	margin-left: 2rem;
+}
+.foto1:hover .gallery-text,
+.foto2:hover .gallery-text,
+.foto3:hover .gallery-text,
+.foto4:hover .gallery-text {
+	opacity: 1;
+}
+.gallery {
+	/*display: block;
+	position: relative;*/
+	height: 250px;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+.navigaciya {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	overflow: hidden;
+	background-color: rgba(236, 236, 236, 0.801);
+	margin-left: 30px;
+	margin-top: 115px;
+	z-index: 1;
+	opacity: 0;
+	transition: all 1s ease 0.3s;
+}
+.navigaciya img {
+	margin-top: 10px;
+	width: 20px;
+	height: 20px;
+}
+.gallery:hover .navigaciya {
+	opacity: 1;
+}
+.img-right {
+	transform: rotate(180deg);
+}
+
+.navigaciya2 {
+	display: block;
+	position: absolute;
+
+	width: 20px;
+	height: 40px;
+	overflow: hidden;
+	background-color: rgb(240, 248, 255);
+	margin-top: 115px;
+	margin-left: 90%;
+	z-index: 2;
+	opacity: 0;
+	transition: all 1s ease 0.3s;
+}
+.navigaciya2 img {
+	margin-top: 10px;
+	width: 20px;
+	height: 20px;
+}
